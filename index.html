@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LunexRP Bank</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #080808;
+            color: white;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            height: 70px;
+            background: #0d0d0d;
+            border-bottom: 1px solid #292929;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 25px;
+        }
+
+        .logo {
+            color: #e00000;
+            font-size: 24px;
+            font-weight: 900;
+            letter-spacing: 2px;
+        }
+
+        .login {
+            background: #d00000;
+            color: white;
+            padding: 11px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 90px 20px 50px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .red {
+            color: #e00000;
+        }
+
+        .hero p {
+            color: #999;
+            font-size: 17px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: #111;
+            border: 1px solid #292929;
+            border-radius: 12px;
+            padding: 25px;
+        }
+
+        .card h2 {
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #999;
+        }
+
+        .amount {
+            font-size: 30px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .empty {
+            text-align: center;
+            color: #777;
+            padding: 50px 20px;
+        }
+
+        footer {
+            text-align: center;
+            color: #666;
+            padding: 50px 20px;
+        }
+
+        @media (max-width: 700px) {
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">LUNEXRP BANK</div>
+
+        <a href="#" class="login">
+            Prisijungti
+        </a>
+    </nav>
+
+    <section class="hero">
+        <h1><span class="red">LunexRP</span> Bank</h1>
+        <p>Virtualus bankas tavo roleplay pasaulyje.</p>
+    </section>
+
+    <main class="container">
+
+        <div class="cards">
+
+            <div class="card">
+                <h2>💵 Piniginė</h2>
+                <p>Grynieji pinigai</p>
+                <div class="amount">€0.00</div>
+            </div>
+
+            <div class="card">
+                <h2>🏦 Bankas</h2>
+                <p>Banko sąskaitos likutis</p>
+                <div class="amount">€0.00</div>
+            </div>
+
+            <div class="card">
+                <h2>💳 Paskolos</h2>
+                <p>Aktyvios paskolos</p>
+                <div class="amount">€0.00</div>
+            </div>
+
+            <div class="card">
+                <h2>🚨 Baudos</h2>
+                <p>Neapmokėtos baudos</p>
+                <div class="amount">€0.00</div>
+            </div>
+
+        </div>
+
+        <div class="empty">
+            Prisijunk, kad galėtum valdyti savo LunexRP Bank sąskaitą.
+        </div>
+
+    </main>
+
+    <footer>
+        © 2026 LunexRP Bank
+    </footer>
+
+</body>
+</html>
